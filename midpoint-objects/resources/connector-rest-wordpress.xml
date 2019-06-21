@@ -308,6 +308,12 @@
                     </target>
                 </inbound>
             </attribute>
+            <activation>
+                <administrativeStatus>
+                    <outbound/>
+                </administrativeStatus>
+            </activation>
+
             <credentials>
                 <password xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="c:ResourcePasswordDefinitionType">
                     <outbound/>
@@ -362,6 +368,9 @@
                 <cap:enabled>true</cap:enabled>
                 <cap:returnDefaultAttributesOption>false</cap:returnDefaultAttributesOption>
             </cap:read>
+         <cap:activation>
+            <cap:status/>
+         </cap:activation>
         </configured>
     </capabilities>
     <synchronization>
